@@ -40,3 +40,9 @@ heap.c:41:8: error: unused variable 'inferior' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2291091
+ju., 28 de sep. de 2023 16:41:01: 
+ heap.c | 15 +++++----------
+ 1 file changed, 5 insertions(+), 10 deletions(-)
+ tests:  2|2
+total_score: 20/70
+4b6914b

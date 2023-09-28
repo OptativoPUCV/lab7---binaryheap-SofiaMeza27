@@ -30,16 +30,7 @@ void* heap_top(Heap* pq)
 
 void heap_push(Heap* pq, void* data, int priority)
 {
-   if(pq -> size == pq -> capac)
-   {
-      pq -> capac = (pq -> capac * 2) + 1;
-      pq -> heapArray = (heapElem *)realloc(pq -> heapArray, sizeof(heapElem) *pq -> capac);
-   }
-   pq -> heapArray[pq -> size].data = data;
-   pq -> heapArray[pq -> size].priority = priority;
-
-   int inferior = pq -> size;
-   int superior = pq -> size - 1 / 2;
+   
 }
 
 
@@ -49,6 +40,10 @@ void heap_pop(Heap* pq){
 
 Heap* createHeap()
 {
+   Heap* nuevo = (Heap *)malloc(sizeof(Heap));
+   nuevo -> size = 0;
+   nuevo -> capac = 3;
+   nuevo -> heapArray = (heapElem *)calloc(nuevo -> capac, sizeof(heapElem));
 
-   return NULL;
+   return nuevo;
 }
