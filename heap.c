@@ -17,8 +17,13 @@ typedef struct Heap{
 } Heap;
 
 
-void* heap_top(Heap* pq){
-    return NULL;
+void* heap_top(Heap* pq)
+{
+    if(pq -> size == 0)
+    {
+      return NULL;
+    }
+    return (void *) pq -> heapArray[0].data;
 }
 
 
@@ -32,7 +37,8 @@ void heap_pop(Heap* pq){
 
 }
 
-Heap* createHeap(){
+Heap* createHeap()
+{
 
    return NULL;
 }
