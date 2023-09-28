@@ -35,6 +35,7 @@ void heap_push(Heap* pq, void* data, int priority)
       pq -> capac = (pq -> capac * 2) + 1;
       pq -> heapArray = (heapElem *)realloc(pq -> heapArray, sizeof(heapElem) *pq -> capac);
    }
+   pq -> heapArray[pq -> size].data = data;
 }
 
 
