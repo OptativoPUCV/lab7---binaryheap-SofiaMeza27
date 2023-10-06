@@ -103,3 +103,20 @@ vi.,  6 de oct. de 2023 19:06:33:
  tests:  7|1
 total_score: 45/70
 c98663f
+vi.,  6 de oct. de 2023 19:09:10: 
+ heap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:4:0:
+heap.c: In function 'heap_pop':
+heap.c:71:7: error: variable 'larguest' set but not used [-Werror=unused-but-set-variable]
+   int larguest;
+       ^~~~~~~~
+heap.c:70:7: error: variable 'right_child' set but not used [-Werror=unused-but-set-variable]
+   int right_child;
+       ^~~~~~~~~~~
+heap.c:69:7: error: variable 'left_child' set but not used [-Werror=unused-but-set-variable]
+   int left_child;
+       ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+69009e7

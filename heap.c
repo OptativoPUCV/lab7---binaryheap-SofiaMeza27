@@ -64,6 +64,18 @@ void heap_pop(Heap* pq)
 
   pq -> heapArray[0] = pq -> heapArray[pq -> size - 1];
   pq -> size--;
+
+  int i = 0;
+  int left_child;
+  int right_child;
+  int larguest;
+
+  while(1)
+  {
+    left_child = 2 * i + 1;
+    right_child = 2 * i + 2;
+    larguest = i;
+  }
 }
 
 Heap* createHeap()
