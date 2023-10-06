@@ -58,3 +58,9 @@ vi.,  6 de oct. de 2023 18:47:32:
  tests:  2|2
 total_score: 20/70
 4608187
+vi.,  6 de oct. de 2023 18:48:46: 
+ heap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  3|2
+total_score: 25/70
+0ebd2aa
