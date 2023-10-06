@@ -75,6 +75,28 @@ void heap_pop(Heap* pq)
     left_child = 2 * i + 1;
     right_child = 2 * i + 2;
     larguest = i;
+
+    if(left_child < pq -> size && pq -> heapArray[left_child].priority > pq -> heapArray[larguest].priority)
+    {
+      larguest = left_child;
+    }
+
+    if(right_child < pq -> size && pq -> heapArray[right_child].priority > pq -> heapArray[larguest].priority)
+    {
+      larguest = right_child;
+    }
+
+    if(larguest != i)
+    {
+      heapElem temp = pq -> heapArray[i];
+      pq -> heapArray[i] = pq -> heapArray[larguest];
+      pq -> heapArray[larguest] = temp;
+      i = larguest;
+    }
+    else 
+    {
+      break;
+    }
   }
 }
 

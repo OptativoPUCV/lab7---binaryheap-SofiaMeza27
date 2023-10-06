@@ -120,3 +120,9 @@ heap.c:69:7: error: variable 'left_child' set but not used [-Werror=unused-but-s
 cc1.exe: all warnings being treated as errors
 Compilation failed
 69009e7
+vi.,  6 de oct. de 2023 19:20:10: 
+ heap.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+ tests:  8|0
+total_score: 70/70
+b881cc2
