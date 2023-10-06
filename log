@@ -64,3 +64,14 @@ vi.,  6 de oct. de 2023 18:48:46:
  tests:  3|2
 total_score: 25/70
 0ebd2aa
+vi.,  6 de oct. de 2023 18:51:16: 
+ heap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:44:8: error: unused variable 'parent' [-Werror=unused-variable]
+    int parent = (i - 1) / 2;
+        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+97cfcbc
