@@ -75,3 +75,13 @@ heap.c:44:8: error: unused variable 'parent' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 97cfcbc
+vi.,  6 de oct. de 2023 18:57:00: 
+ heap.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:46:47: error: invalid type argument of '->' (have 'int')
+    while(i > 0 && pq -> heapArray[i].priority -> pq -> heapArray[parent].priority)
+                                               ^~
+Compilation failed
+8474f7b
