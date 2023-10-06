@@ -46,3 +46,9 @@ ju., 28 de sep. de 2023 16:41:01:
  tests:  2|2
 total_score: 20/70
 4b6914b
+vi.,  6 de oct. de 2023 18:46:03: 
+ heap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+d07a45c
